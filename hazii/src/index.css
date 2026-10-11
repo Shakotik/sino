@@ -1,0 +1,155 @@
+/* These font files are bundled with the project, not requested from an external site. */
+@import '@fontsource/noto-sans/400.css';
+@import '@fontsource/noto-sans/700.css';
+@import '@fontsource/noto-sans-sc/400.css';
+
+:root {
+  /* Dark is the default. The light palette is an explicit user choice below. */
+  --page: #15191b;
+  --paper: #202629;
+  --surface: rgb(34 41 44 / 90%);
+  --surface-strong: rgb(38 46 49 / 96%);
+  --ink: #f2eee8;
+  --muted: #b4b9b5;
+  --line: rgb(226 233 227 / 14%);
+  --accent: #de9477;
+  --accent-deep: #f0b195;
+  --peach-soft: #442e2a;
+  --sage-soft: #213d35;
+  --sage-deep: #9bc8a6;
+  --danger-soft: #402d31;
+  --danger-deep: #f09a9a;
+  --lavender-soft: #303343;
+  --subtle-shadow: 0 16px 42px rgb(0 0 0 / 27%);
+  --soft-shadow: var(--subtle-shadow);
+  --card-shadow: 0 18px 44px rgb(0 0 0 / 38%);
+  --page-glow-one: #24312f;
+  --page-glow-two: #26283a;
+  --writing-canvas: #202629;
+  /* Legacy rgba syntax is also understood by the stroke engine's parser. */
+  --writing-guide: rgba(222, 148, 119, 0.45);
+  --writing-canvas-line: rgb(226 233 227 / 16%);
+  --writing-ink: #f2eee8;
+  color: var(--ink);
+  background: var(--page);
+  font-family: 'Noto Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root[data-theme='light'] {
+  --page: #f7f1eb;
+  --paper: #fffdf9;
+  --surface: rgb(255 253 249 / 86%);
+  --surface-strong: rgb(255 253 249 / 96%);
+  --ink: #2d2925;
+  --muted: #756e67;
+  --line: rgb(92 74 59 / 15%);
+  --accent: #c96f55;
+  --accent-deep: #a9503b;
+  --peach-soft: #f4d9cf;
+  --sage-soft: #e2eee5;
+  --sage-deep: #54785e;
+  --danger-soft: #f8e3df;
+  --danger-deep: #b7514d;
+  --lavender-soft: rgb(236 231 244 / 72%);
+  --subtle-shadow: 0 16px 42px rgb(74 51 31 / 7%);
+  --soft-shadow: var(--subtle-shadow);
+  --card-shadow: 0 18px 44px rgb(74 51 31 / 12%);
+  --page-glow-one: #f6e4da;
+  --page-glow-two: #ece7f4;
+  --writing-canvas: #fffdf9;
+  --writing-guide: rgba(201, 111, 85, 0.24);
+  --writing-canvas-line: rgb(92 74 59 / 16%);
+  --writing-ink: #2d2925;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  min-height: 100%;
+  background: var(--page);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100dvh;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 8% -8%, var(--page-glow-one), transparent 29rem),
+    radial-gradient(circle at 93% 3%, var(--page-glow-two), transparent 28rem),
+    var(--page);
+}
+
+#root { min-height: 100dvh; }
+
+button,
+input {
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button { touch-action: manipulation; }
+
+/* Use the Chinese glyph font only where Chinese text is shown. */
+.hanzi,
+:lang(zh) {
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* Noto Sans includes the tone marks used in pīnyīn: ā, á, ǎ, à. */
+.pinyin {
+  font-family: 'Noto Sans', 'Segoe UI', sans-serif;
+}
+
+button:focus-visible {
+  outline: 3px solid rgb(201 111 85 / 45%);
+  outline-offset: 3px;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.page-transition {
+  /* Do not retain the animation's stacking context after it ends: otherwise
+     page dialogs remain below the fixed theme button despite their z-index. */
+  animation: page-enter 320ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+::view-transition-old(root) {
+  animation: 160ms ease both page-leave;
+}
+
+::view-transition-new(root) {
+  animation: 300ms cubic-bezier(0.22, 1, 0.36, 1) both page-enter;
+}
+
+@keyframes page-leave {
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

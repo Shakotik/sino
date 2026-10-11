@@ -1,0 +1,297 @@
+id,simplified,traditional,pinyin,pinyin_num,hsk3_band,hsk3_seq,hsk2_level,pos_zh,pos_en,gloss_en
+w00001,爱,愛,ài,ai4,1,1,1,动,verb,to love
+w00002,八,八,bā,ba1,1,2,1,数,numeral,eight
+w00003,爸爸,爸爸,bàba,ba4ba5,1,3,1,名,noun,father; dad
+w00004,吧,吧,ba,ba5,1,4,2,助,particle,grammar particle: suggestion or surmise
+w00005,白天,白天,báitiān,bai2tian1,1,5,,名,noun,daytime
+w00006,百,百,bǎi,bai3,1,6,2,数,numeral,hundred
+w00007,半,半,bàn,ban4,1,7,3,数、（副）,numeral; adverb,half
+w00008,包子,包子,bāozi,bao1zi5,1,8,4,名,noun,baozi; steamed stuffed bun
+w00009,杯子,杯子,bēizi,bei1zi5,1,9,1,名,noun,cup; glass
+w00010,本,本,běn,ben3,1,10,1,量,measure word,measure word for books; root
+w00011,边,邊,biān,bian1,1,11,,名、后缀,noun; suffix,side; edge
+w00012,病,病,bìng,bing4,1,12,,名、动,noun; verb,illness; disease
+w00013,不,不,bù,bu4,1,13,1,副,adverb,no; not
+w00014,不客气,不客氣,bú kèqi,bu2 ke4qi5,1,14,1,,,you're welcome
+w00015,不要,不要,búyào,bu2yao4,1,15,,副,adverb,don't; must not
+w00016,菜,菜,cài,cai4,1,16,1,名,noun,vegetable; dish
+w00017,茶,茶,chá,cha2,1,17,1,名,noun,tea
+w00018,唱,唱,chàng,chang4,1,18,,动,verb,to sing
+w00019,超市,超市,chāoshì,chao1shi4,1,19,3,名,noun,supermarket
+w00020,车,車,chē,che1,1,20,,名,noun,car; vehicle
+w00021,吃,吃,chī,chi1,1,21,1,动,verb,to eat
+w00022,出租车,出租車,chūzūchē,chu1zu1che1,1,22,1,名,noun,taxi
+w00023,穿,穿,chuān,chuan1,1,23,2,动,verb,to wear; to put on
+w00024,打电话,打電話,dǎ diànhuà,da3 dian4hua4,1,24,1,,,to make a phone call
+w00025,大,大,dà,da4,1,25,1,形,adjective,big; large
+w00026,大家,大家,dàjiā,da4jia1,1,26,2,代,pronoun,everyone
+w00027,大学,大學,dàxué,da4xue2,1,27,,名,noun,university; college
+w00028,大学生,大學生,dàxuéshēng,da4xue2sheng1,1,28,,名,noun,university student
+w00029,到,到,dào,dao4,1,29,2,动,verb,to arrive; to reach
+w00030,的,的,de,de5,1,30,1,助,particle,grammar particle: possessive marker
+w00031,第,第,dì,di4,1,31,,前缀,prefix,prefix forming ordinal numbers
+w00032,弟弟,弟弟,dìdi,di4di5,1,32,2,名,noun,younger brother
+w00033,点,點,diǎn,dian3,1,33,1,量、（名）,measure word; noun,o'clock; a dot or spot; a little
+w00034,店,店,diàn,dian4,1,34,,名,noun,shop; store
+w00035,电话,電話,diànhuà,dian4hua4,1,35,,名,noun,telephone; phone
+w00036,电脑,電腦,diànnǎo,dian4nao3,1,36,1,名,noun,computer
+w00037,电视,電視,diànshì,dian4shi4,1,37,1,名,noun,TV; television
+w00038,电影,電影,diànyǐng,dian4ying3,1,38,1,名,noun,movie; film
+w00039,电影院,電影院,diànyǐngyuàn,dian4ying3yuan4,1,39,,名,noun,cinema; movie theater
+w00040,东西,東西,dōngxi,dong1xi5,1,40,1,名,noun,thing; stuff
+w00041,都,都,dōu,dou1,1,41,1,副,adverb,all; both
+w00042,读,讀,dú,du2,1,42,1,动,verb,to read
+w00043,读书,讀書,dúshū,du2shu1,1,43,,动,verb,to read; to study
+w00044,对,對,duì,dui4,1,44,2,形、介、（动、量）,adjective; preposition; verb; measure word,"right; correct; towards, at; a pair"
+w00045,对不起,對不起,duìbuqǐ,dui4bu5qi3,1,45,1,动,verb,to apologize; I'm sorry; excuse me
+w00046,多,多,duō,duo1,1,46,1,形、动、代、（数、副）,adjective; verb; pronoun; numeral; adverb,many; much; more
+w00047,多少,多少,duōshao,duo1shao5,1,47,1,代,pronoun,how much; how many
+w00048,儿子,兒子,érzi,er2zi5,1,48,1,名,noun,son
+w00049,二,二,èr,er4,1,49,1,数,numeral,two
+w00050,饭,飯,fàn,fan4,1,50,,名,noun,cooked rice; meal
+w00051,饭店,飯店,fàndiàn,fan4dian4,1,51,1,名,noun,restaurant; hotel
+w00052,房间,房間,fángjiān,fang2jian1,1,52,2,名,noun,room
+w00053,非常,非常,fēicháng,fei1chang2,1,53,2,副,adverb,very; extremely
+w00054,飞机,飛機,fēijī,fei1ji1,1,54,1,名,noun,airplane
+w00055,分,分,fēn,fen1,1,55,3,量、（动、名）,measure word; verb; noun,minute; cent; to divide
+w00056,分钟,分鐘,fēnzhōng,fen1zhong1,1,56,1,量,measure word,minute
+w00057,高兴,高興,gāoxìng,gao1xing4,1,57,1,形,adjective,happy; glad
+w00058,歌,歌,gē,ge1,1,58,,名,noun,song
+w00059,哥哥,哥哥,gēge,ge1ge5,1,59,2,名,noun,older brother
+w00060,个,個,gè,ge4,1,60,1,量,measure word,the general measure word; used with most nouns
+w00061,给,給,gěi,gei3,1,61,2,动、（介）,verb; preposition,to give; to; for
+w00062,公司,公司,gōngsī,gong1si1,1,62,2,名,noun,company; firm
+w00063,工作,工作,gōngzuò,gong1zuo4,1,63,1,动、名,verb; noun,to work; job
+w00064,狗,狗,gǒu,gou3,1,64,1,名,noun,dog
+w00065,贵,貴,guì,gui4,1,65,2,形,adjective,expensive; honorable
+w00066,国,國,guó,guo2,1,66,,名,noun,country; nation
+w00067,还,還,hái,hai2,1,67,2,副,adverb,still; also
+w00068,孩子,孩子,háizi,hai2zi5,1,68,2,名,noun,child
+w00069,汉语,漢語,Hànyǔ,Han4yu3,1,69,1,名,noun,Chinese language
+w00070,汉字,漢字,Hànzì,Han4zi4,1,70,,名,noun,Chinese character
+w00071,好,好,hǎo,hao3,1,71,1,形、（副）、（动）,adjective; adverb; verb,good
+w00072,好吃,好吃,hǎochī,hao3chi1,1,72,2,形,adjective,tasty; delicious
+w00073,好看,好看,hǎokàn,hao3kan4,1,73,,形,adjective,good-looking
+w00074,好听,好聽,hǎotīng,hao3ting1,1,74,,形,adjective,pleasant to hear
+w00075,好玩儿,好玩兒,hǎowánr,hao3wan2r5,1,75,,形,adjective,fun; amusing
+w00076,号,號,hào,hao4,1,76,1,名、量,noun; measure word,number; measure word for dates and sizes
+w00077,喝,喝,hē,he1,1,77,1,动,verb,to drink
+w00078,和,咊,hé,he2,1,78,1,介、连,preposition; conjunction,and; with
+w00079,很,很,hěn,hen3,1,79,1,副,adverb,very
+w00080,后,后,hòu,hou4,1,80,,名,noun,back; behind; after
+w00081,回,回,huí,hui2,1,81,1,动、（量）,verb; measure word,to return; time; occasion
+w00082,会,會,huì,hui4,1,82,1,动,verb,can; to know how to
+w00083,火车,火車,huǒchē,huo3che1,1,83,,名,noun,train
+w00084,鸡蛋,雞蛋,jīdàn,ji1dan4,1,84,2,名,noun,egg
+w00085,几,幾,jǐ,ji3,1,85,1,代、数,pronoun; numeral,how many; several
+w00086,家,傢,jiā,jia1,1,86,1,名、量、（后缀）,noun; measure word; suffix,home; family; measure word for businesses
+w00087,家人,家人,jiārén,jia1ren2,1,87,,名,noun,family member
+w00088,见,見,jiàn,jian4,1,88,,动,verb,to see; to meet
+w00089,件,件,jiàn,jian4,1,89,2,量,measure word,"measure word for things, events and clothes"
+w00090,饺子,餃子,jiǎozi,jiao3zi5,1,90,4,名,noun,dumpling
+w00091,叫,叫,jiào,jiao4,1,91,1,动、（介）,verb; preposition,to call; to be called
+w00092,姐姐,姐姐,jiějie,jie3jie5,1,92,2,名,noun,older sister
+w00093,今年,今年,jīnnián,jin1nian2,1,93,,名,noun,this year
+w00094,今天,今天,jīntiān,jin1tian1,1,94,1,名,noun,today
+w00095,九,九,jiǔ,jiu3,1,95,1,数,numeral,nine
+w00096,觉得,覺得,juéde,jue2de5,1,96,2,动,verb,to feel; to think that
+w00097,开,開,kāi,kai1,1,97,1,动,verb,to open; to drive
+w00098,开车,開車,kāichē,kai1che1,1,98,,动,verb,to drive a car
+w00099,看,看,kàn,kan4,1,99,1,动,verb,to see; to look; to watch; to read
+w00100,看病,看病,kànbìng,kan4bing4,1,100,,动,verb,to see a doctor
+w00101,看见,看見,kànjiàn,kan4jian4,1,101,1,动,verb,to see; to catch sight of
+w00102,可以,可以,kěyǐ,ke3yi3,1,102,2,动、形,verb; adjective,can; may
+w00103,课,課,kè,ke4,1,103,2,名,noun,lesson; class
+w00104,口,口,kǒu,kou3,1,104,3,名、量,noun; measure word,mouth; measure word for people and mouthfuls
+w00105,块,塊,kuài,kuai4,1,105,1,量,measure word,measure word for lumps and pieces; yuan (colloquial)
+w00106,来,來,lái,lai2,1,106,1,动,verb,to come
+w00107,老师,老師,lǎoshī,lao3shi1,1,107,1,名,noun,teacher
+w00108,了,了,le,le5,1,108,1,助,particle,grammar particle: completed action; change of state
+w00109,冷,冷,lěng,leng3,1,109,1,形,adjective,cold
+w00110,里,裏,lǐ,li3,1,110,1,名,noun,inside; in
+w00111,两,兩,liǎng,liang3,1,111,2,数,numeral,two; a pair of
+w00112,零,零,líng,ling2,1,112,2,数,numeral,zero
+w00113,六,六,liù,liu4,1,113,1,数,numeral,six
+w00114,妈妈,媽媽,māma,ma1ma5,1,114,1,名,noun,mother; mom
+w00115,吗,嗎,ma,ma5,1,115,1,助,particle,grammar particle: yes-no question marker
+w00116,买,買,mǎi,mai3,1,116,1,动,verb,to buy
+w00117,卖,賣,mài,mai4,1,117,2,动,verb,to sell
+w00118,忙,忙,máng,mang2,1,118,2,形、动,adjective; verb,busy
+w00119,猫,貓,māo,mao1,1,119,1,名,noun,cat
+w00120,没关系,沒關係,méi guānxi,mei2 guan1xi5,1,120,1,,,it doesn't matter
+w00121,没事,沒事,méishì,mei2shi4,1,121,,动,verb,to be free; it's nothing; never mind
+w00122,没有,沒有,méiyǒu,mei2you3,1,122,1,动、副,verb; adverb,to not have; there is not
+w00123,妹妹,妹妹,mèimei,mei4mei5,1,123,2,名,noun,younger sister
+w00124,们,們,men,men5,1,124,,后缀,suffix,plural suffix for pronouns and human nouns
+w00125,米饭,米飯,mǐfàn,mi3fan4,1,125,1,名,noun,cooked rice
+w00126,面包,麵包,miànbāo,mian4bao1,1,126,3,名,noun,bread
+w00127,面条儿,麵條兒,miàntiáor,mian4tiao2r5,1,127,,名,noun,noodles
+w00128,明年,明年,míngnián,ming2nian2,1,128,,名,noun,next year
+w00129,明天,明天,míngtiān,ming2tian1,1,129,1,名,noun,tomorrow
+w00130,名字,名字,míngzi,ming2zi5,1,130,1,名,noun,name
+w00131,哪,哪,nǎ,na3,1,131,1,代,pronoun,which
+w00132,哪个,哪個,nǎge,na3ge5,1,132,,代,pronoun,which one
+w00133,哪里,哪裏,nǎlǐ,na3li3,1,133,,代,pronoun,where
+w00134,哪儿,哪兒,nǎr,na3r5,1,134,1,代,pronoun,where
+w00135,哪些,哪些,nǎxiē,na3xie1,1,135,,代,pronoun,which ones
+w00136,那,那,nà,na4,1,136,1,代、（连）,pronoun; conjunction,that
+w00137,那边,那邊,nàbiān,na4bian1,1,137,,代,pronoun,over there
+w00138,那个,那個,nàge,na4ge5,1,138,,代,pronoun,that one
+w00139,那里,那裏,nàlǐ,na4li3,1,139,,代,pronoun,there
+w00140,那儿,那兒,nàr,na4r5,1,140,,代,pronoun,there
+w00141,那些,那些,nàxiē,na4xie1,1,141,,代,pronoun,those
+w00142,男,男,nán,nan2,1,142,2,形,adjective,male; man
+w00143,男朋友,男朋友,nánpéngyou,nan2peng2you5,1,143,,名,noun,boyfriend
+w00144,呢,呢,ne,ne5,1,144,1,助,particle,grammar particle: follow-up question; ongoing state
+w00145,能,能,néng,neng2,1,145,1,动,verb,can; to be able to
+w00146,你,你,nǐ,ni3,1,146,1,代,pronoun,you
+w00147,你好,你好,nǐ hǎo,ni3 hao3,1,147,,,,hello
+w00148,你们,你們,nǐmen,ni3men5,1,148,,代,pronoun,you; you all
+w00149,年,年,nián,nian2,1,149,1,名、量,noun; measure word,year
+w00150,您,您,nín,nin2,1,150,2,代,pronoun,you (polite)
+w00151,牛奶,牛奶,niúnǎi,niu2nai3,1,151,2,名,noun,milk
+w00152,女,女,nǚ,nü3,1,152,2,形,adjective,female; woman
+w00153,女儿,女兒,nǚ’ér,nü3’er2,1,153,1,名,noun,daughter
+w00154,女朋友,女朋友,nǚpéngyou,nü3peng2you5,1,154,,名,noun,girlfriend
+w00155,女士,女士,nǚshì,nü3shi4,1,155,5,名,noun,lady; madam
+w00156,朋友,朋友,péngyou,peng2you5,1,156,1,名,noun,friend
+w00157,便宜,便宜,piányi,pian2yi5,1,157,2,形,adjective,cheap; inexpensive
+w00158,漂亮,漂亮,piàoliang,piao4liang5,1,158,1,形,adjective,pretty; beautiful
+w00159,苹果,蘋果,píngguǒ,ping2guo3,1,159,1,名,noun,apple
+w00160,七,七,qī,qi1,1,160,1,数,numeral,seven
+w00161,起床,起床,qǐchuáng,qi3chuang2,1,161,2,动,verb,to get up; to get out of bed
+w00162,千,千,qiān,qian1,1,162,2,数,numeral,thousand
+w00163,前,前,qián,qian2,1,163,,名,noun,front; before
+w00164,钱,錢,qián,qian2,1,164,1,名,noun,money
+w00165,请,請,qǐng,qing3,1,165,1,动,verb,please; to invite
+w00166,请问,請問,qǐngwèn,qing3wen4,1,166,,动,verb,excuse me; may I ask
+w00167,去,去,qù,qu4,1,167,1,动,verb,to go
+w00168,去年,去年,qùnián,qu4nian2,1,168,2,名,noun,last year
+w00169,热,熱,rè,re4,1,169,1,形,adjective,hot; to heat up
+w00170,人,人,rén,ren2,1,170,1,名,noun,person; people
+w00171,认识,認識,rènshi,ren4shi5,1,171,1,动,verb,to know; to recognize
+w00172,日,日,rì,ri4,1,172,2,量、（名）,measure word; noun,day; sun
+w00173,三,三,sān,san1,1,173,1,数,numeral,three
+w00174,商店,商店,shāngdiàn,shang1dian4,1,174,1,名,noun,store; shop
+w00175,上,上,shàng,shang4,1,175,1,名、动,noun; verb,up; above; to get on
+w00176,上班,上班,shàngbān,shang4ban1,1,176,2,动,verb,to go to work
+w00177,上课,上課,shàngkè,shang4ke4,1,177,,动,verb,to attend class
+w00178,上午,上午,shàngwǔ,shang4wu3,1,178,1,名,noun,morning
+w00179,上学,上學,shàngxué,shang4xue2,1,179,,动,verb,to go to school
+w00180,少,少,shǎo,shao3,1,180,1,形、动,adjective; verb,few; little
+w00181,谁,誰,shéi/shuí,shei2/shui2,1,181,1,代,pronoun,who
+w00182,什么,什麼,shénme,shen2me5,1,182,1,代,pronoun,what
+w00183,生病,生病,shēngbìng,sheng1bing4,1,183,2,动,verb,to fall ill
+w00184,十,十,shí,shi2,1,184,1,数,numeral,ten
+w00185,时候,時候,shíhou,shi2hou5,1,185,1,名,noun,time; moment
+w00186,时间,時間,shíjiān,shi2jian1,1,186,2,名,noun,time
+w00187,事,事,shì,shi4,1,187,,名,noun,matter; thing
+w00188,是,是,shì,shi4,1,188,1,动,verb,to be
+w00189,手机,手機,shǒujī,shou3ji1,1,189,2,名,noun,cell phone; mobile phone
+w00190,书,書,shū,shu1,1,190,1,名,noun,book
+w00191,书店,書店,shūdiàn,shu1dian4,1,191,,名,noun,bookstore
+w00192,水,水,shuǐ,shui3,1,192,1,名,noun,water
+w00193,水果,水果,shuǐguǒ,shui3guo3,1,193,1,名,noun,fruit
+w00194,睡,睡,shuì,shui4,1,194,,动,verb,to sleep
+w00195,睡觉,睡覺,shuìjiào,shui4jiao4,1,195,1,动,verb,to sleep; to go to bed
+w00196,说,說,shuō,shuo1,1,196,1,动,verb,to speak; to say
+w00197,说话,說話,shuōhuà,shuo1hua4,1,197,2,动,verb,to speak; to talk
+w00198,四,四,sì,si4,1,198,1,数,numeral,four
+w00199,岁,嵗,suì,sui4,1,199,1,量,measure word,measure word for years of age; years old
+w00200,他,他,tā,ta1,1,200,1,代,pronoun,he; him
+w00201,它,它,tā,ta1,1,201,2,代,pronoun,it
+w00202,她,她,tā,ta1,1,202,1,代,pronoun,she; her
+w00203,他们,他們,tāmen,ta1men5,1,203,,代,pronoun,they; them
+w00204,它们,它們,tāmen,ta1men5,1,204,,代,pronoun,they; them for things
+w00205,她们,她們,tāmen,ta1men5,1,205,,代,pronoun,they; them for females
+w00206,太,太,tài,tai4,1,206,1,副,adverb,too; extremely
+w00207,天,天,tiān,tian1,1,207,,名、量,noun; measure word,day; sky
+w00208,天气,天氣,tiānqì,tian1qi4,1,208,1,名,noun,weather
+w00209,听,聽,tīng,ting1,1,209,1,动,verb,to listen; to hear
+w00210,听见,聽見,tīngjiàn,ting1jian4,1,210,,动,verb,to hear
+w00211,同学,同學,tóngxué,tong2xue2,1,211,1,名,noun,classmate; fellow student
+w00212,外,外,wài,wai4,1,212,2,名,noun,outside; foreign
+w00213,外边,外邊,wàibian,wai4bian5,1,213,,名,noun,outside
+w00214,玩,玩,wán,wan2,1,214,2,动,verb,to play; to have fun
+w00215,晚,晚,wǎn,wan3,1,215,,形,adjective,evening; late
+w00216,晚饭,晚飯,wǎnfàn,wan3fan4,1,216,,名,noun,dinner; supper
+w00217,晚上,晚上,wǎnshang,wan3shang5,1,217,2,名,noun,evening; night
+w00218,喂,喂,wèi,wei4,1,218,1,叹,interjection,hey; hello on the phone
+w00219,问,問,wèn,wen4,1,219,2,动,verb,to ask
+w00220,问题,問題,wèntí,wen4ti2,1,220,2,名,noun,question; problem
+w00221,我,我,wǒ,wo3,1,221,1,代,pronoun,I; me
+w00222,我们,我們,wǒmen,wo3men5,1,222,1,代,pronoun,we; us
+w00223,五,五,wǔ,wu3,1,223,1,数,numeral,five
+w00224,午饭,午飯,wǔfàn,wu3fan4,1,224,,名,noun,lunch
+w00225,喜欢,喜歡,xǐhuan,xi3huan5,1,225,1,动,verb,to like; to be fond of
+w00226,下,下,xià,xia4,1,226,1,名、动、量,noun; verb; measure word,down; to go down; measure word for brief actions
+w00227,下雨,下雨,xià yǔ,xia4 yu3,1,227,1,,,to rain
+w00228,下班,下班,xiàbān,xia4ban1,1,228,,动,verb,to finish work; to get off work
+w00229,下课,下課,xiàkè,xia4ke4,1,229,,动,verb,to finish class
+w00230,下午,下午,xiàwǔ,xia4wu3,1,230,1,名,noun,afternoon
+w00231,先生,先生,xiānsheng,xian1sheng5,1,231,1,名,noun,Mr.; sir; husband
+w00232,现在,現在,xiànzài,xian4zai4,1,232,1,名,noun,now
+w00233,想,想,xiǎng,xiang3,1,233,1,动,verb,to think; to want; to miss
+w00234,小,小,xiǎo,xiao3,1,234,1,形、前缀,adjective; prefix,small; little
+w00235,小朋友,小朋友,xiǎopéngyǒu,xiao3peng2you3,1,235,,名,noun,child; kid
+w00236,小时,小時,xiǎoshí,xiao3shi2,1,236,2,名,noun,hour
+w00237,小学,小學,xiǎoxué,xiao3xue2,1,237,,名,noun,elementary school
+w00238,小学生,小學生,xiǎoxuéshēng,xiao3xue2sheng1,1,238,,名,noun,elementary school student
+w00239,些,些,xiē,xie1,1,239,1,量,measure word,"measure word: some, a few"
+w00240,写,寫,xiě,xie3,1,240,1,动,verb,to write
+w00241,谢谢,謝謝,xièxie,xie4xie5,1,241,1,动,verb,thank you; thanks
+w00242,新,新,xīn,xin1,1,242,2,形,adjective,new
+w00243,星期,星期,xīngqī,xing1qi1,1,243,1,名,noun,week
+w00244,星期日,星期日,xīngqīrì,xing1qi1ri4,1,244,,名,noun,Sunday
+w00245,星期天,星期天,xīngqītiān,xing1qi1tian1,1,245,,名,noun,Sunday
+w00246,休息,休息,xiūxi,xiu1xi5,1,246,2,动,verb,to rest; rest
+w00247,学,學,xué,xue2,1,247,,动,verb,to learn; to study
+w00248,学生,學生,xuéshēng,xue2sheng1,1,248,1,名,noun,student
+w00249,学习,學習,xuéxí,xue2xi2,1,249,1,动,verb,to learn; to study
+w00250,学校,學校,xuéxiào,xue2xiao4,1,250,1,名,noun,school
+w00251,雪,雪,xuě,xue3,1,251,2,名,noun,snow
+w00252,要,要,yào,yao4,1,252,2,动,verb,to want; to need; will
+w00253,也,也,yě,ye3,1,253,2,副,adverb,also; too
+w00254,一,一,yī,yi1,1,254,1,数,numeral,one; a
+w00255,衣服,衣服,yīfu,yi1fu5,1,255,1,名,noun,clothes
+w00256,医生,醫生,yīshēng,yi1sheng1,1,256,1,名,noun,doctor
+w00257,医院,醫院,yīyuàn,yi1yuan4,1,257,1,名,noun,hospital
+w00258,一半,一半,yíbàn,yi2ban4,1,258,,数,numeral,half
+w00259,一下,一下,yíxià,yi2xia4,1,259,2,数量、（副）,quantity; adverb,"(after a verb) a bit, for a moment; all at once"
+w00260,椅子,椅子,yǐzi,yi3zi5,1,260,1,名,noun,chair
+w00261,一点儿,一點兒,yìdiǎnr,yi4dian3r5,1,261,1,数量,quantity,a little; a bit
+w00262,一些,一些,yìxiē,yi4xie1,1,262,,数量,quantity,some; a few
+w00263,有,有,yǒu,you3,1,263,1,动,verb,to have; there is
+w00264,有的,有的,yǒude,you3de5,1,264,,代,pronoun,some; some people
+w00265,有点儿,有點兒,yǒudiǎnr,you3dian3r5,1,265,,副,adverb,a little; somewhat
+w00266,有些,有些,yǒuxiē,you3xie1,1,266,,代、（副）,pronoun; adverb,some; somewhat
+w00267,雨,雨,yǔ,yu3,1,267,,名,noun,rain
+w00268,元,元,yuán,yuan2,1,268,3,量,measure word,yuan; Chinese currency unit
+w00269,月,月,yuè,yue4,1,269,1,名,noun,moon; month
+w00270,再,再,zài,zai4,1,270,2,副,adverb,again; once more
+w00271,在,在,zài,zai4,1,271,1,动、介、副,verb; preposition; adverb,at; in; to exist
+w00272,再见,再見,zàijiàn,zai4jian4,1,272,1,动,verb,goodbye
+w00273,早,早,zǎo,zao3,1,273,,形,adjective,early; morning
+w00274,早饭,早飯,zǎofàn,zao3fan4,1,274,,名,noun,breakfast
+w00275,早上,早上,zǎoshang,zao3shang5,1,275,2,名,noun,morning
+w00276,怎么,怎麼,zěnme,zen3me5,1,276,1,代,pronoun,how; why
+w00277,怎么样,怎麼樣,zěnmeyàng,zen3me5yang4,1,277,1,代,pronoun,how about; how is it
+w00278,找,找,zhǎo,zhao3,1,278,2,动,verb,to look for; to find
+w00279,这,這,zhè,zhe4,1,279,1,代,pronoun,this
+w00280,这边,這邊,zhèbiān,zhe4bian1,1,280,,代,pronoun,this side; here
+w00281,这个,這個,zhège,zhe4ge5,1,281,,代,pronoun,this one
+w00282,这里,這裏,zhèlǐ,zhe4li3,1,282,,代,pronoun,here
+w00283,这儿,這兒,zhèr,zher4,1,283,,代,pronoun,here
+w00284,这些,這些,zhèxiē,zhe4xie1,1,284,,代,pronoun,these
+w00285,真,真,zhēn,zhen1,1,285,2,副、（形）,adverb; adjective,really; truly
+w00286,正在,正在,zhèngzài,zheng4zai4,1,286,2,副,adverb,in the process of doing
+w00287,只,只,zhī,zhi1,1,287,2,量,measure word,classifier for animals and one of a pair
+w00288,知道,知道,zhīdào,zhi1dao4,1,288,2,动,verb,to know
+w00289,中国,中國,Zhōngguó,Zhong1guo2,1,289,1,名,noun,China
+w00290,中文,中文,Zhōngwén,Zhong1wen2,1,290,3,名,noun,Chinese language
+w00291,中午,中午,zhōngwǔ,zhong1wu3,1,291,1,名,noun,noon; midday
+w00292,中学,中學,zhōngxué,zhong1xue2,1,292,,名,noun,middle school
+w00293,中学生,中學生,zhōngxuéshēng,zhong1xue2sheng1,1,293,,名,noun,middle school student
+w00294,住,住,zhù,zhu4,1,294,1,动,verb,to live; to reside
+w00295,桌子,桌子,zhuōzi,zhuo1zi5,1,295,1,名,noun,table; desk
+w002

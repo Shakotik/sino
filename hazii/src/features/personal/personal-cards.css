@@ -1,0 +1,112 @@
+.personal-shell {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 36px 0 96px;
+}
+
+.personal-header { max-width: 760px; margin: 28px 0 24px; }
+.personal-header h1 { font-size: clamp(30px, 4vw, 44px); letter-spacing: -.045em; margin: 8px 0 16px; }
+.personal-header p, .personal-muted { color: var(--muted); line-height: 1.65; }
+.personal-local-note { color: var(--muted); font-size: 12px; line-height: 1.7; max-width: 760px; }
+.personal-toolbar, .personal-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 24px 0; }
+.personal-toolbar > div > span { margin: 0 12px; color: var(--muted); }
+.personal-section-heading h2 { margin: 0; font-size: 24px; letter-spacing: -.025em; }
+.personal-section-heading p { margin: 5px 0; color: var(--muted); }
+.personal-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.personal-primary, .personal-secondary, .personal-danger {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  border-radius: 16px; border: 1px solid var(--line); padding: 12px 18px;
+  font: inherit; cursor: pointer; min-height: 46px; transition: background 200ms ease, transform 200ms ease;
+}
+.personal-primary { color: var(--sage-deep); background: var(--sage-soft); border-color: color-mix(in srgb, var(--sage-deep) 35%, transparent); }
+.personal-secondary { color: var(--ink); background: var(--surface); }
+.personal-danger { color: var(--danger-deep); background: var(--danger-soft); }
+.personal-primary:hover, .personal-secondary:hover, .personal-danger:hover { transform: translateY(-1px); filter: brightness(1.08); }
+.personal-shell button:disabled, .personal-dialog button:disabled { cursor: default; opacity: .55; transform: none; }
+.personal-filters { display: grid; grid-template-columns: 1fr minmax(190px, .42fr); gap: 16px; margin: 24px 0; }
+.personal-filters label, .personal-form label { display: grid; gap: 8px; color: var(--muted); font-size: 13px; }
+.personal-filters input, .personal-filters select, .personal-form input, .personal-form textarea, .personal-form select {
+  min-width: 0; width: 100%; padding: 13px 14px; border: 1px solid var(--line); background: var(--paper); color: var(--ink);
+  border-radius: 13px; font: inherit; font-size: 16px; outline-color: var(--sage-deep);
+}
+.personal-form textarea { resize: vertical; line-height: 1.6; }
+.personal-form small { display: inline; font-size: 11px; }
+.personal-form { display: grid; gap: 18px; }
+.personal-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.personal-word { padding: 22px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); min-width: 0; display: flex; flex-direction: column; }
+.personal-word p { overflow-wrap: anywhere; line-height: 1.65; margin: 8px 0; white-space: pre-wrap; }
+.personal-word .pinyin { color: var(--accent-deep); }
+.personal-word-heading { display: flex; align-items: start; justify-content: space-between; gap: 12px; }
+.personal-word-heading > strong { font-size: 30px; font-weight: 400; overflow-wrap: anywhere; }
+.personal-word-heading > span { color: var(--muted); background: var(--lavender-soft); padding: 5px 8px; border-radius: 10px; font-size: 10px; flex-shrink: 0; }
+.personal-word-heading > .is-known { color: var(--sage-deep); background: var(--sage-soft); }
+.personal-word-note { color: var(--muted); font-size: 12px; }
+.personal-word-footer { padding-top: 16px; margin-top: auto; color: var(--muted); font-size: 12px; }
+.personal-word-footer > div { display: flex; gap: 16px; margin-top: 14px; }
+.personal-word-footer button, .personal-text-button { background: transparent; border: 0; color: var(--sage-deep); padding: 8px 0; cursor: pointer; text-align: left; }
+.personal-word-footer button:last-child { color: var(--muted); }
+.personal-empty { text-align: center; padding: 60px 24px; border: 1px dashed var(--line); border-radius: 24px; }
+.personal-empty > span { font-size: 48px; color: var(--sage-deep); }
+.personal-empty p { color: var(--muted); line-height: 1.65; }
+.personal-error { padding: 14px 18px; border-radius: 14px; color: var(--danger-deep); background: var(--danger-soft); line-height: 1.65; }
+.personal-dialog {
+  width: min(580px, calc(100% - 28px)); max-height: min(90dvh, 860px); padding: 0; overflow: auto;
+  color: var(--ink); background: color-mix(in srgb, var(--surface-strong) 95%, transparent);
+  border: 1px solid var(--line); border-radius: 28px; box-shadow: 0 32px 100px rgb(0 0 0 / 35%);
+  backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+}
+.personal-dialog[open] { animation: personal-dialog-enter 280ms cubic-bezier(.22, 1, .36, 1) both; }
+.personal-dialog::backdrop { background: rgb(5 10 10 / 54%); backdrop-filter: blur(5px); animation: personal-backdrop-enter 280ms ease both; }
+.personal-dialog.is-closing { animation: personal-dialog-exit 280ms ease both; pointer-events: none; }
+.personal-dialog.is-closing::backdrop { animation: personal-backdrop-exit 280ms ease both; }
+.personal-dialog-content { padding: 28px; }
+.personal-dialog-heading { display: flex; justify-content: space-between; gap: 16px; align-items: center; margin-bottom: 22px; }
+.personal-dialog-heading h2 { margin: 0; font-size: 23px; letter-spacing: -.03em; }
+.personal-icon-button { width: 40px; height: 40px; border-radius: 50%; color: var(--muted); border: 1px solid var(--line); background: var(--surface); font-size: 24px; cursor: pointer; flex-shrink: 0; }
+.personal-practice { max-width: 720px; margin: 28px auto; }
+.personal-practice > .personal-primary { display: flex; margin: 20px auto; }
+.personal-practice progress, .personal-statistic progress { display: block; appearance: none; width: 100%; height: 10px; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: color-mix(in srgb, var(--sage-soft) 45%, transparent); }
+.personal-practice progress::-webkit-progress-bar, .personal-statistic progress::-webkit-progress-bar { background: color-mix(in srgb, var(--sage-soft) 45%, transparent); }
+.personal-practice progress::-webkit-progress-value, .personal-statistic progress::-webkit-progress-value { background: linear-gradient(90deg, #74b596, #afe0b2); border-radius: 999px; box-shadow: inset 0 1px 1px rgb(255 255 255 / 50%); }
+.personal-practice progress::-moz-progress-bar, .personal-statistic progress::-moz-progress-bar { background: linear-gradient(90deg, #74b596, #afe0b2); border-radius: 999px; }
+.personal-flip-card { width: 100%; padding: 0; height: 350px; perspective: 1300px; border: 0; background: transparent; margin: 26px 0; cursor: pointer; color: var(--ink); }
+.personal-flip-inner { position: relative; width: 100%; height: 100%; display: block; transform-style: preserve-3d; transition: transform 650ms cubic-bezier(.22, 1, .36, 1); }
+.personal-flip-card.is-revealed .personal-flip-inner { transform: rotateY(180deg); }
+.personal-card-face { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; padding: 32px; border-radius: 28px; border: 1px solid var(--line); background: var(--surface-strong); backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: auto; box-shadow: var(--card-shadow); }
+.personal-card-face > strong { font-size: clamp(22px, 4vw, 34px); font-weight: 500; overflow-wrap: anywhere; }
+.personal-card-face > strong.hanzi { font-size: clamp(36px, 7vw, 66px); }
+.personal-card-face > small { font-size: 13px; color: var(--muted); line-height: 1.6; white-space: pre-wrap; }
+.personal-card-back { transform: rotateY(180deg); background: color-mix(in srgb, var(--sage-soft) 24%, var(--surface-strong)); }
+.personal-grade-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.personal-grade-actions button { display: flex; flex-direction: column; text-align: center; }
+.personal-grade-actions small { font-size: 11px; opacity: .8; }
+.personal-complete { text-align: center; border: 1px solid var(--line); padding: 42px 24px; border-radius: 28px; background: var(--surface); }
+.personal-complete-mark { display: inline-grid; place-items: center; width: 64px; height: 64px; background: var(--sage-soft); color: var(--sage-deep); border-radius: 50%; font-size: 34px; }
+.personal-summary { margin: 28px 0; padding: 26px; border: 1px solid var(--line); border-radius: 26px; background: linear-gradient(135deg, color-mix(in srgb, var(--sage-soft) 36%, transparent), var(--surface)); box-shadow: inset 0 1px rgb(255 255 255 / 6%); }
+.personal-summary > .personal-section-heading { margin-top: 0; }
+.personal-summary-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.personal-statistic { min-width: 0; }
+.personal-statistic > div { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; font-size: 13px; margin-bottom: 10px; }
+.personal-statistic strong { color: var(--sage-deep); }
+.personal-statistic small { display: block; color: var(--muted); font-size: 11px; margin-top: 8px; }
+.personal-summary > .personal-text-button { margin-top: 20px; }
+.personal-detail-statistics { display: grid; gap: 24px; }
+@keyframes personal-dialog-enter { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes personal-dialog-exit { to { opacity: 0; transform: translateY(12px) scale(.98); } }
+@keyframes personal-backdrop-enter { from { opacity: 0; } to { opacity: 1; } }
+@keyframes personal-backdrop-exit { to { opacity: 0; } }
+@media (max-width: 900px) { .personal-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .personal-shell { width: calc(100% - 32px); padding-top: 24px; }
+  .personal-toolbar, .personal-section-heading { align-items: stretch; flex-direction: column; gap: 14px; }
+  .personal-toolbar > .personal-actions > button { flex: 1; padding: 10px; }
+  .personal-card-grid, .personal-filters, .personal-summary-grid { grid-template-columns: 1fr; }
+  .personal-summary { padding: 20px; }
+  .personal-dialog-content { padding: 22px; }
+  .personal-dialog { border-radius: 24px; }
+  .personal-dialog-heading h2 { font-size: 21px; }
+  .personal-flip-card { height: 310px; }
+  .personal-grade-actions { gap: 6px; }
+  .personal-grade-actions button { padding: 10px 6px; font-size: 13px; border-radius: 13px; }
+  .personal-grade-actions small { font-size: 10px; }
+}

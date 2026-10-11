@@ -1,0 +1,146 @@
+/* Align the companion to the same content edge as the home-page heading.
+   Scoped selectors take precedence over the original responsive mascot rules. */
+.panda-companion.panda-companion--aligned {
+  width: min(540px, 100%);
+  margin: 22px 0 34px;
+}
+
+.panda-companion-layout {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  min-height: 200px;
+}
+
+.panda-companion-character { display: grid; justify-items: start; align-content: center; }
+.panda-tip-slot { display: grid; align-items: center; min-width: 0; min-height: 190px; padding-block: 8px; }
+
+.panda-companion--aligned .panda-tip.is-closed {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  animation: none;
+}
+
+.panda-companion--aligned .panda-tip {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 21px 37px 21px 22px;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  border-radius: 27px;
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--surface-strong) 84%, transparent),
+    color-mix(in srgb, var(--surface-strong) 65%, transparent)
+  );
+  box-shadow:
+    0 12px 34px rgb(0 0 0 / 8%),
+    inset 0 1px 0 rgb(255 255 255 / 13%);
+  -webkit-backdrop-filter: blur(18px) saturate(130%);
+  backdrop-filter: blur(18px) saturate(130%);
+  transform-origin: 0 80%;
+  animation: panda-glass-enter 850ms cubic-bezier(0.22, 0.65, 0.3, 1) both;
+}
+
+/* A small rounded tail keeps the silhouette soft instead of using a diamond. */
+.panda-companion--aligned .panda-tip::after {
+  bottom: 22px;
+  left: -7px;
+  width: 12px;
+  height: 16px;
+  border: 0;
+  border-radius: 9px 0 0 9px;
+  background: color-mix(in srgb, var(--surface-strong) 78%, transparent);
+  transform: rotate(-18deg);
+}
+
+.panda-companion--aligned .panda-tip p {
+  margin-bottom: 7px;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
+.panda-companion--aligned .panda-tip strong {
+  font-size: 0.82rem;
+  font-weight: 550;
+  line-height: 1.55;
+}
+
+.panda-companion--aligned .panda-tip-close {
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  transition: color 240ms ease, background 240ms ease;
+}
+
+.panda-companion--aligned .panda-tip-close:hover {
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+  transform: none;
+}
+
+.panda-companion--aligned .panda-tip.is-closing {
+  animation: panda-glass-exit 850ms cubic-bezier(0.22, 0.65, 0.3, 1) forwards;
+}
+
+.panda-companion--aligned .panda-tip-button {
+  left: 0;
+  min-width: 132px;
+  min-height: 36px;
+  justify-content: center;
+  font-weight: 600;
+  transform: none;
+}
+
+.panda-companion--aligned .panda-tip-button:hover span {
+  transform: none;
+}
+
+.panda-companion--aligned .panda-tip-button:focus-visible,
+.panda-companion--aligned .panda-tip-close:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@keyframes panda-glass-enter {
+  from { opacity: 0; transform: translateY(6px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes panda-glass-exit {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to { opacity: 0; transform: translateY(6px) scale(0.98); }
+}
+
+@media (max-width: 560px) {
+  .panda-companion.panda-companion--aligned {
+    margin-bottom: 25px;
+  }
+
+  .panda-companion--aligned .panda-tip {
+    left: auto;
+    width: 100%;
+    padding: 17px 32px 17px 16px;
+    border-radius: 23px;
+  }
+
+  .panda-companion--aligned .panda-tip-button {
+    min-width: 0;
+    min-height: 44px;
+    padding-inline: 0;
+    white-space: normal;
+    text-align: left;
+  }
+  .panda-companion-layout { grid-template-columns: 110px minmax(0, 1fr); gap: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panda-companion--aligned .panda-tip,
+  .panda-companion--aligned .panda-tip.is-closing {
+    animation-duration: 1ms;
+  }
+}

@@ -1,0 +1,191 @@
+/* Common reading and layout rules. A long word is never cut into syllables.
+   Exceptional unbroken tokens scroll inside their text region, not the page. */
+/* Primary navigation sits outside page animation stacking contexts. */
+.app-navigation { position: fixed; z-index: 35; inset: auto 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: var(--paper); border-top: 1px solid var(--line); padding: 6px 8px max(6px, env(safe-area-inset-bottom)); }
+.app-navigation-item { display: grid; justify-items: center; align-content: center; min-height: 54px; gap: 3px; color: var(--muted); text-decoration: none; font-size: .72rem; border-radius: 12px; }
+.app-navigation-item > span:first-child { font-size: 1.35rem; }
+.app-navigation-item.is-active { color: var(--sage-deep); background: var(--sage-soft); }
+.app-navigation-brand, .app-navigation-logout { display: none; }
+.sino-workspace { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+.sino-workspace.is-concentrating { padding-bottom: 0; }
+.sino-workspace .level-card, a.study-primary-button, a.study-secondary-button, a.back-button { text-decoration: none; display: inline-block; color: var(--ink); }
+.sino-workspace .level-card { text-align: left; }
+.today-panel h1 { font-size: clamp(1.8rem, 5vw, 3rem); margin: 12px 0; }
+.today-panel p { line-height: 1.65; color: var(--muted); }
+.today-statistics { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin: 24px 0; }
+.today-statistics > div { background: var(--paper); padding: 20px; border-radius: 20px; display: grid; gap: 8px; }
+.today-statistics strong { font-size: 2rem; color: var(--sage-deep); }
+.today-statistics span { color: var(--muted); font-size: .85rem; }
+.today-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.today-courses { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,320px),1fr)); gap: 18px; margin-top: 28px; }
+.today-courses article { background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 20px; }
+.today-courses a { color: var(--ink); text-decoration: none; font-weight: 700; }
+.skill-indicators { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 20px; }
+.skill-indicators > div { display: grid; gap: 8px; }
+.skill-indicators span { color: var(--muted); font-size: .8rem; }
+.skill-indicators strong { font-size: .85rem; color: var(--sage-deep); }
+.skill-indicators progress { width: 100%; height: 8px; appearance: none; border: 0; border-radius: 8px; background: var(--line); overflow: hidden; }
+.skill-indicators progress::-webkit-progress-bar { background: var(--line); border-radius: 8px; }
+.skill-indicators progress::-webkit-progress-value { background: var(--sage-deep); border-radius: 8px; }
+.skill-indicators progress::-moz-progress-bar { background: var(--sage-deep); border-radius: 8px; }
+.reading-preview > a { align-self: center; justify-self: start; }
+.dictionary-save-word { padding: 18px; margin: 20px 0; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); }
+.dictionary-save-word summary, .reading-translation summary { cursor: pointer; min-height: 44px; align-content: center; color: var(--sage-deep); }
+.dictionary-save-word form { margin-top: 18px; }
+.dictionary-save-word p, .reading-translation p { font-size: .85rem; line-height: 1.7; }
+.reading-story { color: var(--ink); text-decoration: none; }
+.reading-story > span { color: var(--sage-deep); margin-top: auto; }
+.reading-translation { margin: 24px 0; padding: 20px; background: var(--paper); border-radius: 20px; }
+.learning-preference { display: grid; gap: 12px; color: var(--muted); }
+.learning-preference select { padding: 12px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 12px; }
+.study-advanced-options > summary { min-height: 44px; cursor: pointer; color: var(--sage-deep); padding-block: 12px; }
+.study-advanced-options > label, .study-advanced-options > div { margin-block: 16px; }
+.study-advanced-options label { display: grid; gap: 8px; }
+.study-advanced-options .study-checkbox { display: flex; }
+.listening-prompt { display: grid; gap: 18px; justify-items: center; }
+.listening-prompt small { color: var(--muted); }
+.profile-course-actions > .skill-indicators { width: 100%; margin-bottom: 18px; }
+.profile-log-out { margin-block: 20px; }
+.offline-course { padding: 24px; margin-top: 28px; border: 1px solid var(--line); border-radius: 20px; background: var(--paper); }
+.offline-course p { color: var(--muted); line-height: 1.65; }
+.offline-course progress { width: 100%; accent-color: var(--sage-deep); }
+body:has(.personal-practice) .app-navigation { display: none; }
+body:has(.personal-practice) .sino-workspace { margin-left: 0; }
+@media (min-width: 1024px) {
+  .app-shell { padding-top: max(76px, calc(env(safe-area-inset-top) + 60px)); }
+  .app-shell > .topbar { display: none; }
+  .app-navigation { inset: 0 auto 0 0; width: 104px; border-top: 0; border-right: 1px solid var(--line); grid-template-columns: 1fr; align-content: start; gap: 18px; padding: 28px 10px; }
+  .app-navigation-brand { display: block; color: var(--ink); text-decoration: none; text-align: center; font-size: 1.65rem; font-weight: 700; margin-bottom: 20px; }
+  .app-navigation-logout { display: block; border: 0; color: var(--muted); background: transparent; padding: 12px 0; cursor: pointer; }
+  .app-navigation-item { min-height: 68px; }
+  .sino-workspace:not(.is-concentrating) { margin-left: 104px; padding-bottom: 0; }
+}
+@media (max-width: 600px) {
+  .today-statistics { grid-template-columns: minmax(0,1fr); }
+  .today-statistics > div { grid-template-columns: 50px 1fr; align-items: center; padding: 14px 18px; }
+  .today-actions > a { width: 100%; text-align: center; }
+}
+:root { word-break: normal; overflow-wrap: normal; hyphens: none; line-break: strict; }
+:where(h1, h2, h3, h4, p, li, label, button, small, strong, summary) {
+  word-break: normal; overflow-wrap: normal; hyphens: none;
+}
+:where(main, section, article, header, form, fieldset, label, nav, div) { min-inline-size: 0; }
+:where(input, textarea, select) { max-inline-size: 100%; font-size: max(16px, 1em); }
+:where(img, svg, canvas) { max-inline-size: 100%; }
+.text-word { white-space: nowrap; word-break: keep-all; color: inherit; }
+:where(h1, h2, h3) { text-wrap: balance; }
+:where(p, li) { text-wrap: pretty; }
+.dictionary-dialog-article p, .personal-word p, .personal-word-heading > strong,
+.personal-card-face > strong, .course-word-row p, .anki-word, .calendar-word-hanzi,
+.profile-name, .dictionary-russian-headword {
+  overflow-wrap: normal; word-break: normal; hyphens: none;
+}
+.study-large-hanzi, .study-word-meaning, .study-result-list strong,
+.writing-practice-meaning, .profile-person p {
+  overflow-wrap: normal; word-break: normal; hyphens: none;
+}
+.study-large-hanzi, .study-word-meaning, .study-result-list div,
+.writing-practice-meaning, .profile-person p, .profile-person h2,
+.vocabulary-hanzi, .vocabulary-translation, .anki-meaning {
+  max-inline-size: 100%; overflow-x: auto; overscroll-behavior-inline: contain;
+}
+.vocabulary-card-face { min-width: 0; grid-template-columns: minmax(0, 1fr); }
+.vocabulary-hanzi { line-height: 1.4; }
+.dictionary-dialog-article p, .personal-word p, .personal-card-face > strong,
+.personal-card-face > small, .course-word-row p, .anki-word, .personal-course-title,
+.personal-folder-title > span:last-child, .dictionary-dialog-heading h2 {
+  max-inline-size: 100%; overflow-x: auto; overscroll-behavior-inline: contain;
+}
+.dictionary-header h1 { font-size: clamp(1.7rem, 5vw, 3.5rem); line-height: 1.2; }
+.dictionary-dialog-heading h2 { line-height: 1.35; padding-bottom: 4px; }
+.dictionary-dialog-article { min-width: 0; }
+.dictionary-suggestion { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.5fr); }
+.dictionary-suggestion-hanzi { line-height: 1.5; }
+.dictionary-suggestion-russian { min-width: 0; overflow-x: auto; }
+.dictionary-suggestion-description small { white-space: normal; max-height: 4.5em; line-height: 1.5; }
+.dictionary-suggestion-description strong { overflow-x: auto; }
+.dictionary-search-label input, .sentence-reader textarea { font-size: 16px; }
+.dictionary-clear { flex: 0 0 36px; width: 36px; min-height: 36px; }
+.dictionary-filters { flex-wrap: wrap; overflow: visible; }
+.dictionary-filters button { min-height: 44px; }
+.sentence-tokens { overflow-wrap: normal; overflow-x: auto; }
+.sentence-word { white-space: nowrap; max-width: none; overflow-wrap: normal; }
+.sentence-navigation { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+.sentence-navigation button { min-width: 0; }
+.personal-card-face { justify-content: flex-start; padding: clamp(18px, 4vw, 32px); }
+.personal-card-face > :first-child { margin-top: auto; }
+.personal-card-face > :last-child { margin-bottom: auto; }
+.personal-card-face > * { flex-shrink: 0; max-width: 100%; }
+.personal-word-heading { flex-wrap: wrap; }
+.personal-word-heading > strong { max-width: 100%; overflow-x: auto; color: var(--ink); }
+.personal-dialog-heading, .study-dialog-heading { align-items: flex-start; }
+.personal-dialog-heading h2, .study-dialog-heading h2 { min-width: 0; overflow-x: auto; }
+.personal-toolbar, .personal-section-heading, .word-list-heading, .course-heading,
+.course-enrollment-panel, .profile-course-heading { flex-wrap: wrap; }
+.personal-actions > button { max-width: 100%; }
+.personal-filters { grid-template-columns: minmax(0, 1fr) minmax(0, .6fr); }
+.personal-card-grid, .levels, .course-sections { align-items: stretch; }
+.study-option-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.course-word-row { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) auto; }
+.course-word-row > div { overflow-x: auto; }
+.writing-canvas { min-height: 0; min-width: 0; max-width: 100%; }
+.profile-identity, .profile-identity-copy { min-width: 0; }
+.calendar-word-list li { min-width: 0; }
+.calendar-word-hanzi { max-width: 100%; overflow-x: auto; }
+/* Reserve a top row for fixed menu/theme controls, including landscape safe areas. */
+main { padding-inline: max(0px, env(safe-area-inset-left)) max(0px, env(safe-area-inset-right)); }
+.back-button { max-width: calc(100% - 90px); }
+.topbar { min-height: 52px; }
+.brand { flex-shrink: 0; }
+.panda-companion--aligned .panda-tip p { letter-spacing: 0; }
+.panda-companion--aligned .panda-tip strong { overflow-wrap: normal; }
+
+/* Topic folders use the same calm surfaces as HSK courses. */
+.personal-folders { margin: 28px 0; }
+.personal-folder-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 14px; margin-top: 18px; }
+.personal-folder { min-width: 0; padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+.personal-folder.is-selected { border-color: var(--sage-deep); background: color-mix(in srgb, var(--sage-soft) 45%, var(--surface)); }
+.personal-folder p { color: var(--muted); font-size: .85rem; }
+.personal-folder-title { display: flex; gap: 10px; width: 100%; text-align: left; padding: 0; border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: 1.2rem; font-weight: 650; min-height: 44px; }
+.personal-folder-title > span:first-child { color: var(--sage-deep); }
+.personal-folder-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.personal-folder-tabs [aria-pressed='true'] { color: var(--sage-deep); border-color: var(--sage-deep); }
+.personal-course-title { margin: 0; line-height: 1.5; }
+.personal-card-selection { display: flex; gap: 8px; align-items: center; margin-bottom: 16px; color: var(--muted); font-size: .8rem; overflow-x: auto; }
+.personal-card-selection input, .personal-move-toolbar input[type='checkbox'] { width: 20px; height: 20px; flex-shrink: 0; accent-color: var(--sage-deep); }
+.personal-move-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-block: 20px; }
+.personal-move-toolbar label { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; color: var(--muted); }
+.personal-move-toolbar select { width: 100%; max-width: 320px; padding: 12px; font: inherit; font-size: 16px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 12px; }
+.personal-move-toolbar p { flex-basis: 100%; margin: 0; font-size: .8rem; }
+.personal-folder-diary { margin-block: 18px; }
+.personal-folder-diary summary { cursor: pointer; padding-block: 12px; color: var(--sage-deep); }
+.personal-folder-diary ul { padding-left: 20px; }
+.personal-folder-diary p { overflow-x: auto; }
+
+@media (max-width: 600px) {
+  .levels, .course-sections, .personal-filters, .personal-summary-grid, .study-option-pair { grid-template-columns: minmax(0, 1fr); }
+  .course-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .course-stat span { font-size: .75rem; }
+  .personal-grade-actions { grid-template-columns: minmax(0, 1fr); }
+  .personal-grade-actions button { min-height: 52px; }
+  .personal-section-heading > button, .personal-toolbar .personal-actions, .personal-toolbar .personal-actions > button { width: 100%; }
+  .personal-folder .personal-actions > button { flex: 1 1 145px; }
+  .personal-dialog-content { padding: 20px; }
+  .dictionary-suggestion { grid-template-columns: minmax(0, 1fr); }
+  .dictionary-suggestion-hanzi { font-size: 1.4rem; }
+  .dictionary-suggestion-description small { font-size: .84rem; }
+  .dictionary-dialog { width: 100%; max-height: calc(100dvh - 24px); }
+  .dictionary-dialog-heading h2 { font-size: clamp(1.8rem, 8vw, 3rem); }
+  .word-list-heading { align-items: stretch; flex-direction: column; }
+  .course-word-row { grid-template-columns: minmax(0, 1fr); }
+  .course-word-row p, .course-word-row button { grid-column: auto; grid-row: auto; }
+  .personal-header h1, .profile-header h1 { font-size: 1.85rem; line-height: 1.25; }
+  .personal-practice h2 { font-size: 1.35rem; }
+  .back-button { font-size: .85rem; padding-inline: 12px; }
+}
+@media (max-width: 480px) {
+  .panda-companion-layout { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .panda-tip-slot { min-height: 160px; }
+  .panda-companion--aligned .panda-tip::after { display: none; }
+  .study-hero h1 { font-size: clamp(1.8rem, 7.8vw, 2.4rem); line-height: 1.2; }
+}

@@ -1,0 +1,58 @@
+.dictionary-mode-switch { display: flex; gap: 6px; margin-bottom: 18px; }
+.dictionary-mode-switch button {
+  min-height: 44px; padding: 9px 17px; border: 1px solid transparent;
+  border-radius: 13px; background: transparent; color: var(--muted); cursor: pointer;
+}
+.dictionary-mode-switch button[aria-pressed='true'] {
+  background: var(--sage-soft); color: var(--sage-deep); border-color: var(--line);
+}
+.sentence-reader { min-width: 0; }
+.sentence-reader label { display: block; margin-bottom: 12px; color: var(--muted); font-size: 0.9rem; }
+.sentence-reader textarea {
+  width: 100%; min-height: 126px; resize: vertical; padding: 16px;
+  border: 1px solid var(--line); border-radius: 15px;
+  background: var(--paper); color: var(--ink);
+  font: 1.1rem/1.8 'Noto Sans SC', 'Noto Sans', sans-serif;
+}
+.sentence-reader textarea::placeholder { color: var(--muted); opacity: 0.65; }
+.sentence-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.sentence-actions button, .sentence-navigation button {
+  min-height: 44px; padding: 10px 15px; border: 1px solid var(--line);
+  border-radius: 12px; color: var(--ink); background: var(--paper); cursor: pointer;
+  font-size: 0.82rem;
+}
+.sentence-actions .sentence-submit { color: var(--sage-deep); background: var(--sage-soft); font-weight: 700; }
+.sentence-actions .sentence-example { color: var(--muted); background: transparent; border-color: transparent; }
+.sentence-length { margin-left: auto; color: var(--muted); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+.sentence-note { margin: 18px 0 10px; color: var(--muted); font-size: 0.78rem; line-height: 1.6; }
+.sentence-tokens {
+  padding: 16px; border: 1px solid var(--line); border-radius: 17px;
+  background: var(--paper); white-space: pre-wrap; overflow-wrap: anywhere; line-height: 2.8;
+}
+.sentence-word {
+  display: inline-block; min-height: 44px; margin: 4px 3px; padding: 4px 10px;
+  border: 1px solid var(--line); border-radius: 11px;
+  font: 1.35rem/1.6 'Noto Sans SC', sans-serif; white-space: normal; max-width: 100%; overflow-wrap: anywhere;
+  background: var(--surface); color: var(--ink); cursor: pointer; vertical-align: baseline;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+.sentence-word:hover, .sentence-word[aria-pressed='true'] {
+  background: var(--sage-soft); border-color: var(--sage-deep); color: var(--sage-deep);
+}
+.sentence-word.is-unknown { border-style: dashed; color: var(--muted); }
+.sentence-punctuation { font: 1.2rem/1.8 'Noto Sans SC', 'Noto Sans', sans-serif; }
+.sentence-navigation { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 8px; margin: 18px 0 22px; padding-top: 12px; }
+.sentence-navigation span { color: var(--muted); font-size: 0.75rem; white-space: nowrap; }
+.sentence-navigation button:disabled, .sentence-actions button:disabled { opacity: 0.45; cursor: default; }
+.sentence-reader :focus-visible, .dictionary-mode-switch :focus-visible, .sentence-navigation :focus-visible {
+  outline: 2px solid var(--sage-deep); outline-offset: 3px;
+}
+@media (max-width: 560px) {
+  .dictionary-mode-switch button { flex: 1; padding-inline: 9px; }
+  .sentence-actions .sentence-submit { flex-basis: 100%; }
+  .sentence-actions { gap: 4px; }
+  .sentence-tokens { padding: 8px; }
+  .sentence-word { font-size: 1.2rem; padding-inline: 8px; }
+  .sentence-navigation button { padding-inline: 8px; font-size: 0.72rem; }
+}
+@media (prefers-reduced-motion: reduce) { .sentence-word { transition: none; } }

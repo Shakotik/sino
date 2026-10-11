@@ -1,0 +1,30 @@
+// Curated example sentences shown in the first local dictionary release.
+// The structure is deliberately separate from HSK catalogues: when the BKRS
+// import is unlocked, its examples can be merged here without changing search.
+export const dictionaryExamples = {
+  '爱': [{ sentence: '我爱中国菜。', pinyin: 'Wǒ ài Zhōngguó cài.', translationRu: 'Я люблю китайскую кухню.' }],
+  '爸爸': [{ sentence: '我爸爸是老师。', pinyin: 'Wǒ bàba shì lǎoshī.', translationRu: 'Мой папа — учитель.' }],
+  '北京': [{ sentence: '她住在北京。', pinyin: 'Tā zhù zài Běijīng.', translationRu: 'Она живёт в Пекине.' }],
+  '吃': [{ sentence: '你想吃什么？', pinyin: 'Nǐ xiǎng chī shénme?', translationRu: 'Что ты хочешь поесть?' }],
+  '大学': [{ sentence: '我在大学学习汉语。', pinyin: 'Wǒ zài dàxué xuéxí Hànyǔ.', translationRu: 'Я изучаю китайский в университете.' }],
+  '读': [{ sentence: '晚上我读中文书。', pinyin: 'Wǎnshang wǒ dú Zhōngwén shū.', translationRu: 'Вечером я читаю книгу на китайском.' }],
+  '对不起': [{ sentence: '对不起，我来晚了。', pinyin: 'Duìbuqǐ, wǒ lái wǎn le.', translationRu: 'Извините, я пришёл поздно.' }],
+  '喝': [{ sentence: '我们喝茶吧。', pinyin: 'Wǒmen hē chá ba.', translationRu: 'Давай выпьем чаю.' }],
+  '汉语': [{ sentence: '汉语很有意思。', pinyin: 'Hànyǔ hěn yǒu yìsi.', translationRu: 'Китайский язык очень интересный.' }],
+  '好': [{ sentence: '今天天气很好。', pinyin: 'Jīntiān tiānqì hěn hǎo.', translationRu: 'Сегодня хорошая погода.' }],
+  '你好': [{ sentence: '你好！很高兴认识你。', pinyin: 'Nǐ hǎo! Hěn gāoxìng rènshi nǐ.', translationRu: 'Здравствуйте! Очень рад познакомиться.' }],
+  '名字': [{ sentence: '你叫什么名字？', pinyin: 'Nǐ jiào shénme míngzi?', translationRu: 'Как тебя зовут?' }],
+  '朋友': [{ sentence: '他是我的好朋友。', pinyin: 'Tā shì wǒ de hǎo péngyou.', translationRu: 'Он мой хороший друг.' }],
+  '请': [{ sentence: '请坐。', pinyin: 'Qǐng zuò.', translationRu: 'Пожалуйста, садитесь.' }],
+  '认识': [{ sentence: '我认识这个人。', pinyin: 'Wǒ rènshi zhège rén.', translationRu: 'Я знаю этого человека.' }],
+  '学习': [{ sentence: '我每天学习中文。', pinyin: 'Wǒ měitiān xuéxí Zhōngwén.', translationRu: 'Я каждый день учу китайский.' }],
+  '学生': [{ sentence: '她是中国学生。', pinyin: 'Tā shì Zhōngguó xuésheng.', translationRu: 'Она китайская студентка.' }],
+  '谢谢': [{ sentence: '谢谢你的帮助。', pinyin: 'Xièxie nǐ de bāngzhù.', translationRu: 'Спасибо за твою помощь.' }],
+  '喜欢': [{ sentence: '我喜欢看电影。', pinyin: 'Wǒ xǐhuan kàn diànyǐng.', translationRu: 'Мне нравится смотреть фильмы.' }],
+  '现在': [{ sentence: '现在几点？', pinyin: 'Xiànzài jǐ diǎn?', translationRu: 'Сколько сейчас времени?' }],
+  '想': [{ sentence: '我想去中国。', pinyin: 'Wǒ xiǎng qù Zhōngguó.', translationRu: 'Я хочу поехать в Китай.' }],
+  '再见': [{ sentence: '明天见，再见！', pinyin: 'Míngtiān jiàn, zàijiàn!', translationRu: 'Увидимся завтра, до свидания!' }],
+  '中国': [{ sentence: '中国很大。', pinyin: 'Zhōngguó hěn dà.', translationRu: 'Китай очень большой.' }],
+  '中文': [{ sentence: '你会说中文吗？', pinyin: 'Nǐ huì shuō Zhōngwén ma?', translationRu: 'Ты умеешь говорить по-китайски?' }],
+  '坐': [{ sentence: '请坐在这里。', pinyin: 'Qǐng zuò zài zhèlǐ.', translationRu: 'Пожалуйста, сядьте здесь.' }],
+}

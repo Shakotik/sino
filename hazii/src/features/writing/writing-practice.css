@@ -1,0 +1,27 @@
+.writing-practice-panel { text-align: center; }
+.hanzi-quiz-canvas.is-demonstrating { pointer-events: none; }
+.writing-phase-heading { margin: 22px 0 12px; font-size: clamp(1.25rem, 5vw, 1.65rem); letter-spacing: -.03em; }
+.writing-phase-heading:focus { outline: none; }
+.writing-practice-meaning { margin: 12px 0; font-size: clamp(1rem, 4vw, 1.2rem); line-height: 1.6; overflow-wrap: anywhere; }
+.writing-practice-pinyin { margin: 8px 0; color: var(--sage-deep); font-size: 1.1rem; }
+.writing-word-positions { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 12px 0 20px; }
+.writing-word-positions > span { display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid var(--line); border-radius: 9px; color: var(--muted); font-size: .75rem; }
+.writing-word-positions > .is-current { color: var(--sage-deep); background: var(--sage-soft); }
+.writing-practice-canvas { max-width: 340px; margin: auto; }
+.writing-practice-canvas .hanzi-quiz-canvas { width: 100%; max-width: 100%; touch-action: none; }
+.writing-practice-canvas .hanzi-quiz-wrap { width: 100%; }
+.writing-practice-canvas .writing-secondary-action { min-height: 44px; }
+.writing-step-feedback { display: grid; justify-items: center; align-content: center; gap: 14px; min-height: 260px; padding: 22px 14px; border: 1px solid var(--line); border-radius: 22px; background: var(--sage-soft); animation: study-exercise-enter 450ms ease both; }
+.writing-step-feedback strong { font-size: 1.15rem; color: var(--sage-deep); }
+.writing-step-feedback p { max-width: 40ch; margin: 0; color: var(--muted); line-height: 1.7; }
+.writing-feedback-symbol { color: var(--sage-deep); font-size: 2.5rem; }
+.writing-step-feedback.needs-practice { background: var(--surface); }
+.writing-template-help { margin-top: 12px; }
+.writing-lesson-summary { margin: 20px auto; text-align: center; color: var(--muted); font-size: .85rem; line-height: 1.7; }
+@media (max-width: 540px) {
+  .writing-practice-panel { padding: 20px 12px; }
+  .writing-step-feedback > button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .writing-step-feedback { animation: none; }
+}

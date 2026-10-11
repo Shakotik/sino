@@ -1,0 +1,79 @@
+.course-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.study-dialog {
+  width: min(560px, calc(100vw - 32px)); max-height: min(88dvh, 860px); box-sizing: border-box;
+  padding: clamp(20px, 4vw, 32px); border: 1px solid var(--line); border-radius: 28px;
+  color: var(--ink); background: var(--surface-strong); box-shadow: 0 30px 100px #0005;
+  backdrop-filter: blur(28px); animation: study-dialog-enter 380ms cubic-bezier(.16,1,.3,1) both;
+}
+.study-dialog::backdrop { background: #070c116e; backdrop-filter: blur(7px); animation: study-shade-enter 320ms both; }
+.study-dialog.is-closing { animation: study-dialog-exit 320ms ease both; pointer-events: none; }
+.study-dialog.is-closing::backdrop { animation: study-shade-exit 320ms ease both; }
+.study-dialog-heading { display: flex; gap: 20px; align-items: flex-start; justify-content: space-between; margin-bottom: 22px; }
+.study-dialog-heading h2 { margin: 0; font-size: 1.45rem; letter-spacing: -.04em; }
+.study-dialog-heading > button { flex-shrink: 0; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: var(--paper); cursor: pointer; font-size: 1.4rem; }
+.study-options { display: grid; gap: 18px; }
+.study-options label { display: grid; gap: 8px; font-size: .92rem; }
+.study-options input:not([type=checkbox]), .study-options select, .word-list-search {
+  width: 100%; min-width: 0; box-sizing: border-box; min-height: 46px; padding: 11px 14px;
+  color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 12px; font: inherit;
+}
+.study-option-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.study-options .study-checkbox { display: flex; align-items: center; gap: 10px; }
+.study-checkbox input { width: 19px; height: 19px; accent-color: var(--sage-deep); }
+.study-options p, .study-note { margin: 0; color: var(--muted); line-height: 1.6; font-size: .9rem; }
+.study-primary, .study-secondary, .card-filter-option {
+  min-height: 46px; padding: 12px 18px; border: 1px solid var(--line); border-radius: 13px; font: inherit; cursor: pointer;
+}
+.study-primary { color: #13271d; background: var(--sage-deep); font-weight: 700; }
+.study-secondary, .card-filter-option { color: var(--ink); background: var(--surface); }
+.study-primary:disabled, .study-secondary:disabled { opacity: .5; cursor: default; }
+.study-primary:focus-visible, .study-secondary:focus-visible, .card-filter-option:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.card-filter-options { display: grid; gap: 12px; }
+.card-filter-option { display: flex; justify-content: space-between; gap: 20px; text-align: left; }
+.card-filter-option:hover { background: var(--sage-soft); }
+.study-status { padding: 16px; margin-top: 16px; border: 1px solid var(--line); border-radius: 14px; color: var(--sage-deep); background: var(--sage-soft); }
+.study-error { color: var(--danger-deep); }
+.profile-course-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
+.profile-remove-course, .profile-confirm-danger { min-height: 46px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 13px; font: inherit; cursor: pointer; }
+.profile-remove-course { color: var(--muted); background: transparent; }
+.profile-confirm-danger { color: var(--danger-deep); background: var(--surface); }
+.profile-remove-course:focus-visible, .profile-confirm-danger:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.learning-reminder-settings { display: grid; gap: 14px; margin: 0; min-width: 0; padding: 18px; border: 1px solid var(--line); border-radius: 18px; }
+.learning-reminder-settings legend { padding-inline: 8px; font-weight: 650; }
+.course-word-list { display: grid; gap: 10px; margin-top: 22px; }
+.course-word-row { display: grid; grid-template-columns: minmax(120px, 1fr) 2fr auto; gap: 18px; align-items: center; padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.course-word-row strong { font-family: 'Noto Sans SC', sans-serif; font-size: 1.5rem; }
+.course-word-row small { display: block; margin-top: 5px; color: var(--accent-deep); }
+.course-word-row p { margin: 0; overflow-wrap: anywhere; line-height: 1.5; }
+.course-word-row .is-known { color: var(--sage-deep); background: var(--sage-soft); }
+.word-list-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 22px 0; }
+.word-list-pagination { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 24px; }
+.anki-surface { max-width: 720px; margin: 28px auto; padding: clamp(20px, 5vw, 44px); border: 1px solid var(--line); border-radius: 26px; background: var(--surface); text-align: center; }
+.anki-word { margin: 26px 0 12px; font: 400 clamp(3rem, 10vw, 5rem)/1.5 'Noto Sans SC', sans-serif; overflow-wrap: anywhere; }
+.anki-meaning { margin: 20px 0; font-size: 1.3rem; line-height: 1.6; }
+.anki-actions { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin-top: 24px; }
+.anki-actions button { min-height: 66px; padding: 10px 4px; border: 1px solid var(--line); border-radius: 13px; color: var(--ink); background: var(--paper); font: inherit; cursor: pointer; }
+.anki-actions small { display: block; margin-top: 5px; color: var(--muted); }
+.anki-actions .is-again { color: var(--danger-deep); }
+.anki-actions .is-good, .anki-actions .is-easy { color: var(--sage-deep); background: var(--sage-soft); }
+.anki-due-banner { position: fixed; bottom: max(18px, env(safe-area-inset-bottom)); left: 50%; z-index: 25; display: flex; align-items: center; gap: 16px; width: min(650px, calc(100% - 40px)); box-sizing: border-box; padding: 16px 20px; border: 1px solid var(--line); border-radius: 22px; color: var(--ink); background: var(--surface-strong); backdrop-filter: blur(24px); box-shadow: var(--card-shadow); transform: translateX(-50%); }
+.anki-due-banner p { margin: 0; flex: 1; font-size: .92rem; }
+.anki-due-banner > button:last-child { background: transparent; color: var(--muted); border: none; min-width: 32px; min-height: 40px; cursor: pointer; }
+@keyframes study-dialog-enter { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes study-dialog-exit { to { opacity: 0; transform: translateY(12px) scale(.98); } }
+@keyframes study-shade-enter { from { opacity: 0; } to { opacity: 1; } }
+@keyframes study-shade-exit { to { opacity: 0; } }
+@media (max-width: 600px) {
+  .course-word-row { grid-template-columns: 1fr auto; gap: 12px; }
+  .course-word-row p { grid-column: 1; grid-row: 2; }
+  .course-word-row button { grid-column: 2; grid-row: 1 / 3; }
+  .anki-actions { grid-template-columns: 1fr 1fr; }
+  .anki-due-banner { flex-wrap: wrap; gap: 10px; }
+  .anki-due-banner p { flex-basis: calc(100% - 50px); }
+  .course-stats { gap: 8px; }
+  .course-stat { padding: 15px 9px; }
+  .course-stat span { font-size: .75rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .study-dialog, .study-dialog::backdrop, .study-dialog.is-closing, .study-dialog.is-closing::backdrop { animation-duration: 1ms; }
+}
