@@ -22,7 +22,8 @@ const pool = new Pool({
   // multiplexes connections when multiple replicas are deployed in production.
   max: Number(process.env.DICTIONARY_DB_POOL_SIZE ?? 15),
   idleTimeoutMillis: 30_000,
-  connectionTimeoutMillis: 2_000,
+  // Serverless hosts such as Neon wake a sleeping database in a few seconds.
+  connectionTimeoutMillis: Number(process.env.DB_CONNECT_TIMEOUT_MS ?? 2_000),
 })
 const cache = createClient({ url: redisUrl ?? undefined })
 

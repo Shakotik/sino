@@ -24,3 +24,10 @@ Redis в облаке не нужен: без `REDIS_URL` словарь отв�
 `npm run dictionary:import -- <путь к dabkrs_dabruks.html>` с `DATABASE_URL`
 внешней строки подключения Render (временно добавив свой IP в доступ к базе).
 Полный словарь занимает около 2 ГБ, бесплатная база Render — 1 ГБ.
+
+## Без банковской карты: Render Web Service + Neon
+
+Blueprint на Render просит карту. Вместо него базу можно взять в Neon
+(бесплатно, без карты, 0,5 ГБ, не удаляется), а на Render создать только
+Web Service вручную с теми же командами и переменными, что в `render.yaml`,
+плюс `DATABASE_URL` из Neon и `DB_CONNECT_TIMEOUT_MS=10000`.
